@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/med
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+  jpa:
+    generate-ddl: true
+
+app:
+  jwtSecret: secretasdasdasdsfsdfgdfgfddfghfghdfgsddfsdghghfgsgdfgdfgsdfgsdfgfsgsdfgdfgsdfgsdfgsdfg
+  jwtExpirationInMs: 86400000
+
+springdoc:
+  swagger-ui:
+    path: /docs/swagger-ui.html
+    enabled: true
+  api-docs:
+    path: /docs/api-docs
